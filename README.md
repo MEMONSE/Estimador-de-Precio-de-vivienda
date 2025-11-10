@@ -26,9 +26,9 @@ Check out the configuration reference at https://huggingface.co/docs/hub/spaces-
 
 # Un ejemplo de uso del endpoint que proporciona Gradio una vez desplegado
 
-import requests
 
-## 🧠 Ejemplo de uso del endpoint API
+
+# Ejemplo de uso del endpoint API
 
 Podés probar el modelo desde Python usando la API de Hugging Face Spaces:
 
@@ -54,3 +54,4 @@ input_data = {
 response = requests.post(url, json=input_data)
 
 print(response.json())
+
