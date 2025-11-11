@@ -26,7 +26,6 @@ Check out the configuration reference at https://huggingface.co/docs/hub/spaces-
 
 # Un ejemplo de uso del endpoint que proporciona Gradio una vez desplegado
 
-import requests
 
 ## 🧠 Ejemplo de uso del endpoint API
 
