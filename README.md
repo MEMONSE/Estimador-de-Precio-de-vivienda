@@ -35,5 +35,8 @@ pip install gradio_client
 ## Ejemplo de uso del endpoint de Hugging Face
 
 Ejecutar => test_api.py
+Donde los link de acceso terminan siendo => 
+        https://memonse-tp-final-datosvivos.hf.space/predict
+        https://memonse-tp-final-datosvivos.hf.space/ejemplo
 
 También en la misma interfaz se genero un botón "🎯 Probar con datos de ejemplo" , que ejecuta otro ejemplo
