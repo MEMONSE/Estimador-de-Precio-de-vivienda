@@ -16,40 +16,24 @@ Check out the configuration reference at https://huggingface.co/docs/hub/spaces-
 
 ## Estimador de Precios de viviendas
 
-# El link al Space de Hugging Face
+* El link al Space de Hugging Face
 [Abrir la aplicación en Hugging Face Spaces](https://huggingface.co/spaces/MEMONSE/TP_Final_Datosvivos)
 
-# captura de pantalla de la aplicación en funcionamiento.
+* Foto de la pantalla de la aplicación en funcionamiento.
 
 ![App en funcionamiento](Interfaz.jpg)
 
 
-# Un ejemplo de uso del endpoint que proporciona Gradio una vez desplegado
+* 🚀 Ejemplo de uso del endpoint de Hugging Face
 
+Una vez desplegada la aplicación en **Hugging Face Spaces**, Gradio genera automáticamente un endpoint público que permite consumir el modelo desde cualquier entorno de Python.
 
-## 🧠 Ejemplo de uso del endpoint API
+Para interactuar con la API, primero se debe instalar el cliente de Gradio:
 
-Podés probar el modelo desde Python usando la API de Hugging Face Spaces:
+```bash
+pip install gradio_client
+## Ejemplo de uso del endpoint de Hugging Face
 
-```python
-import requests
+Ejecutar => test_api.py
 
-# URL del endpoint del modelo
-url = "https://memonse-tp-final-datosvivos.hf.space/run/predict"
-
-# Datos de entrada de ejemplo
-input_data = {
-    "rooms": 3,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "surface_total": 65,
-    "surface_covered": 55,
-    "place_name": "Palermo",
-    "property_type": "Departamento",
-    "state_name": "Capital Federal"
-}
-
-
-response = requests.post(url, json=input_data)
-
-print(response.json())
+También en la misma interfaz se genero un botón "🎯 Probar con datos de ejemplo" , que ejecuta otro ejemplo
